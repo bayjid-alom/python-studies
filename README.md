@@ -55,58 +55,60 @@ The goal of this repository is to:
 
 This repository is maintained for learning and educational purposes.
 
+---
 
+<br>
 
+<details>
+<summary><b>🛠️ Terminal Commands</b></summary>
 
+> **Open the project folder in Git Bash** before running any commands.
+
+### ▶️ Run the Project
+
+```bash
+py main.py
+```
+
+### 📁 Navigation Guide
+
+| Action | Command |
+| :------ | :------ |
+| 📂 Enter a folder | `cd Module-01` |
+| 📂 Enter a nested folder | `cd Module-01/Problem-01` |
+| ⬅️ Go back one folder | `cd ..` |
+| ⬅️⬅️ Go back two folders | `cd ../..` |
 
 ---
 
-
-
-> 💡 **Click the sections below to expand.**
-
 <details>
-<summary><b>📚 Chapter Overview</b></summary>
+<summary><b>💡 Quick Terminal Cheat Sheet</b></summary>
 
-This repository is organized into **11 chapters**, following the book structure.
+```bash
+# Enter a folder
+cd FolderName
 
-</details>
+# Enter nested folders
+cd Folder1/Folder2
 
-<details>
-<summary><b>📂 File Naming Convention</b></summary>
+# Go back one folder
+cd ..
 
-```text
-01_hello_world.py
-02_variables.py
-03_input_output.py
-04_even_odd.py
-05_rectangle_area.py
+# Go back two folders
+cd ../..
+
+# List files and folders
+ls
+
+# Show current directory
+pwd
+
+# Run Python file
+py main.py
 ```
 
-Files are named using a serial number followed by a descriptive title for better organization.
+</details>
 
 </details>
 
-<details>
-<summary><b>📖 About This Repository</b></summary>
-
-This repository is a personal learning archive created while studying Python. The code is organized chapter by chapter to make learning and revision easier.
-
-</details>
-
-<details>
-<summary><b>🎯 Learning Goals</b></summary>
-
-- Learn Python step by step
-- Practice every chapter
-- Keep code organized
-- Build a personal reference for revision
-
-</details>
-
-<details>
-<summary><b>📌 Future Updates</b></summary>
-
-This repository will continue to grow as I complete more chapters, solve additional exercises, and improve my understanding of Python.
-
-</details>
+---
