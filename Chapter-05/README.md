@@ -4,20 +4,167 @@
 ---
 
 ```
-📝 In short - PIEA:
+📝OOP-এর ৪টি Pillars In short - PIEA:
 
 P - Polymorphism
 I - Inheritance
 E - Encapsulation
 A - Abstraction
 ```
+---
+<br><br>
+
+
+
+
+
+
+
+
+<!--🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
+<details>
+<summary><strong>📝 উদাহরণসহ Encapsulation পদ্ধতি বর্ণনা কর। (রচনামূলক-৪)</strong></summary>
+
+### উত্তর :
+ক্লাসের মেম্বারসমূহ (ভেরিয়েবল, মেথড এবং অবস্থা) অ্যাক্সেস করার পদ্ধতিকে এনক্যাপসুলেশন বলে। ক্লাসের মেম্বারসমূহ পাবলিক হিসাবে থাকে, যদি প্রাইভেট হিসাবে ঘোষণা না করা হয়। 
+নিচে একটি প্রোগ্রামের মাধ্যমে এনক্যাপসুলেশন পদ্ধতি দেখানো হলো-
+
+### উদাহরণ
+
+```python
+class Person:
+    def __init__(self, name, password):
+        self.name = name            # Public Attribute
+        self.__password = password  # Private Attribute
+
+    def show_password(self):
+        return self.__password
+
+
+class Student(Person):
+    def introduce(self):
+        print(f"My name is {self.name}")
+
+
+student1 = Student("Bayjid", "12345")
+
+student1.introduce()
+print(student1.show_password())
+
+# print(student1.__password)   # ❌ Error
+```
+
+### Output
+
+```text
+My name is Bayjid
+12345
+```
+---
+
+
+### ব্যাখ্যা
+
+উপরের প্রোগ্রামে `Person` ক্লাসে `name` একটি **Public Attribute**, তাই এটি ক্লাসের বাইরে থেকেও সহজেই ব্যবহার করা যায়। অন্যদিকে, `__password` একটি **Private Attribute**, ফলে এটি বাইরে থেকে সরাসরি Access করা সম্ভব নয়। Private Data নিরাপদভাবে ব্যবহারের জন্য `show_password()` নামে একটি **Public Method** ব্যবহার করা হয়েছে, যা `__password`-এর মান Return করে। এছাড়া `Student` ক্লাস, `Person` ক্লাসকে Inherit করায় এটি `Person`-এর সকল **Public Member** ব্যবহার করতে পারে। এভাবেই **Encapsulation** গুরুত্বপূর্ণ Data-কে সুরক্ষিত রেখে **Controlled Access** নিশ্চিত করে।
 
 ---
 
-## OOP-এর ৪টি Pillars
+### সংক্ষিপ্ত নোট (Process)
 
-- Encapsulation
-- Abstraction
-- Inheritance
-- Polymorphism
+- `__password` একটি **Private Attribute**, তাই Class-এর বাইরে থেকে সরাসরি Access করা যায় না।
+- `show_password()` হলো একটি **Public Method**, যা Private Data নিরাপদভাবে Return করে।
+- এভাবেই **Encapsulation** Data-কে সুরক্ষিত রাখে এবং **Controlled Access** প্রদান করে।
+
+</details>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
+<details>
+<summary><strong>📝 প্রোগ্রামসহ পলিমরফিজম পদ্ধতি বর্ণনা কর। (রচনামূলক-০১)</strong></summary>
+
+### উত্তর:
+
+পলিমরফিজম (Polymorphism): পলি শব্দের অর্থ বহু, মরফিজম শব্দের অর্থ রূপ। পলিমরফিজম হচ্ছে বহুরূপ, যা এমন এক ধরনের বৈশিষ্ট্য, যেখানে একটি ফাংশন বা অবজেক্ট ভিন্ন ভিন্ন রূপে মূলত ফাংশনের আর্চমেন্ট বা ফাংশন কলের উপর নির্ভর করে ফলাফল প্রদান করে। নিচের প্রোগ্রামে উদাহরণ দেওয়া হলো-
 ---
+
+### প্রোগ্রাম
+
+```python
+class Animal:
+    def __init__(self, name):
+        self.name = name
+        print(self.name, "was adopted.")
+
+    def run(self):
+        print("Running!")
+
+
+class Turtle(Animal):
+    def run(self):
+        print("Running slowly!")
+
+
+tim = Turtle("Tim")
+tim.run()
+```
+
+### Output
+
+```text
+Tim was adopted.
+Running slowly!
+```
+---
+উপরের প্রোগ্রামে Turtle এবং Animal দুইটি ক্লাসের মধ্যে' run() নামক মেথড ডিফাইন করা হয়েছে। কলের উপর নির্ভর করে কোন মেথড রান হবে তা নির্ধারণ করে একই নামের একাধিক মেথড ভিন্ন ভিন্ন কাজ করাকে পলিমরফিজম বলে। Turtle ক্লাস Animal ক্লাসকে ইনহেরিট করবে। এখানে Animal ক্লাস হচ্ছে সুপার ক্লাস, Turtle ক্লাস সাব ক্লাস। Turtle ক্লাসে run() মেথড পুনরায় ডিফাইন করাকে মেথড ওভার-রাইডিং বলে।
+---
+
+### Method Overriding
+
+`Turtle` Class-এ `run()` Method পুনরায় লিখে `Animal` Class-এর `run()` Method-এর নতুন আচরণ নির্ধারণ করা হয়েছে। একে **Method Overriding** বলা হয়।
+
+---
+
+### পলিমরফিজম-এর প্রকারভেদ
+
+#### ১। Static / Compile-time Polymorphism
+- Method Overloading
+- Operator Overloading
+
+#### ২। Dynamic / Run-time Polymorphism
+- Method Overriding
+
+---
+
+
+
+### সংক্ষিপ্ত নোট (Process / Not write in exam)
+
+- **Polymorphism** অর্থ **একই Method-এর একাধিক রূপ**।
+- এটি সাধারণত **Method Overriding** বা **Method Overloading**-এর মাধ্যমে বাস্তবায়ন করা হয়।
+- Python-এ সবচেয়ে বেশি ব্যবহৃত হয় **Run-time Polymorphism (Method Overriding)**।
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
