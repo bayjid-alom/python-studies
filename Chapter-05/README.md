@@ -155,6 +155,7 @@ Running slowly!
 - Python-এ সবচেয়ে বেশি ব্যবহৃত হয় **Run-time Polymorphism (Method Overriding)**।
 
 </details>
+<br>
 
 
 
@@ -168,3 +169,232 @@ Running slowly!
 
 
 <!--🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
+<details>
+<summary><strong>📝 উদাহরণসহ ইনহেরিট্যান্স (Inheritance with Example) বর্ণনা কর। (রচনামূলক-০২)</strong></summary>
+
+### উত্তর:
+
+ইনহেরিট্যান্স (Inheritance): ইনহেরিট্যান্স অর্থ হচ্ছে উত্তরাধিকার সূত্রে পাওয়া। বাবার সম্পত্তি উত্তরাধিকার সূত্রে ছেলে পাবে এটাই স্বাভাবিক। ইনহেরিট্যান্স হচ্ছে একধরনের মেকানিজম, যেখানে চাইল্ড ক্লাস তৈরির সময় পেরেন্ট ক্লাসের বিহেভিয়ার ও প্রাপার্টিজ ধারণ করে। নিচের প্রোগ্রামে `Calculator` হচ্ছে পেরেন্ট ক্লাস, `SubCalculator` হচ্ছে চাইল্ড ক্লাস। `SubCalculator` ক্লাস `Calculator` ক্লাসের বৈশিষ্ট্য ধারণ করেছে। `my_calculator` হচ্ছে `SubCalculator` ক্লাসের অবজেক্ট, কিন্তু এর মাধ্যমে `Calculator` ক্লাসের মেম্বারসমূহও অ্যাক্সেস করা যাচ্ছে, একে ইনহেরিট্যান্স বলে।
+
+---
+
+### প্রোগ্রাম
+
+```python
+class Calculator:
+    # Super Class
+
+    def addition(self, x, y):
+        return x + y
+
+    def subtraction(self, x, y):
+        return x - y
+
+    def multiplication(self, x, y):
+        return x * y
+
+    def division(self, x, y):
+        try:
+            return x / y
+        except ZeroDivisionError:
+            return "It is impossible to divide by zero."
+
+
+class SubCalculator(Calculator):
+    # Child Class
+
+    def square(self, x):
+        return x * x
+
+    def cube(self, x):
+        return x * x * x
+
+
+my_calculator = SubCalculator()
+
+print("X + Y =", my_calculator.addition(60, 30))
+print("X - Y =", my_calculator.subtraction(60, 30))
+print("X * Y =", my_calculator.multiplication(60, 30))
+print("X / Y =", my_calculator.division(60, 30))
+print("Square of 9 =", my_calculator.square(9))
+print("Cube of 5 =", my_calculator.cube(5))
+```
+
+### Output
+
+```text
+X + Y = 90
+X - Y = 30
+X * Y = 1800
+X / Y = 2.0
+Square of 9 = 81
+Cube of 5 = 125
+```
+
+---
+
+উপরের প্রোগ্রামে `Calculator` ক্লাস একটি **Super Class** এবং `SubCalculator` ক্লাস একটি **Child Class**। `SubCalculator` ক্লাস `Calculator` ক্লাসকে Inherit করেছে। তাই `SubCalculator`-এর অবজেক্ট `my_calculator` নিজস্ব `square()` ও `cube()` Method-এর পাশাপাশি `addition()`, `subtraction()`, `multiplication()` এবং `division()` Method-ও ব্যবহার করতে পারছে। পেরেন্ট ক্লাসের বৈশিষ্ট্য চাইল্ড ক্লাসে ব্যবহার করার এই প্রক্রিয়াকে **Inheritance** বলা হয়।
+
+---
+
+### Inheritance
+
+`SubCalculator` Class, `Calculator` Class-এর সকল Public Method উত্তরাধিকার সূত্রে গ্রহণ করেছে। তাই `SubCalculator`-এর Object দিয়ে Parent Class-এর Method-গুলোও ব্যবহার করা সম্ভব হয়েছে। একে **Inheritance** বলা হয়।
+
+---
+
+
+
+### সংক্ষিপ্ত নোট (Process / Not write in exam)
+
+- **Inheritance** অর্থ **উত্তরাধিকার সূত্রে Parent Class-এর বৈশিষ্ট্য গ্রহণ করা।**
+- এটি **Code Reusability** বৃদ্ধি করে এবং একই কোড বারবার লেখার প্রয়োজন কমায়।
+- Python-এ `class Child(Parent):` লিখে Inheritance তৈরি করা হয়।
+
+</details>
+<br>
+
+
+
+
+
+
+
+
+<!--🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
+<details>
+<summary><strong>📌 ইনহেরিট্যান্স এর প্রকারভেদ (রচনামূলক-০২) — অতিরিক্ত আলোচনা</strong></summary>
+
+## ১। Single Inheritance
+
+একটি পেরেন্ট ক্লাসের কমন বৈশিষ্ট্যসমূহ অন্য ক্লাসে ইনহেরিট করে কাজ করাকে **Single Inheritance** বলে।
+
+### উদাহরণ
+
+```python
+class A:
+    pass
+
+class B(A):
+    pass
+```
+
+---
+
+## ২। Multilevel Inheritance
+
+যদি একটি ডিরাইভড ক্লাসেরও আরও ডিরাইভড ক্লাস থাকে, তখন একে **Multilevel Inheritance** বলে।
+
+### উদাহরণ
+
+```python
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C(B):
+    pass
+```
+
+---
+
+## ৩। Multiple Inheritance
+
+একটি ক্লাস একই সাথে একাধিক ক্লাসকে ইনহেরিট করতে পারে। সেক্ষেত্রে ডিরাইভড ক্লাসের Parentheses-এর ভিতরে প্রতিটি Base Class-এর নাম উল্লেখ করতে হয়।
+
+### উদাহরণ
+
+```python
+class ParentOne:
+    pass
+
+class ParentTwo:
+    pass
+
+class Child(ParentOne, ParentTwo):
+    pass
+```
+---
+
+## ৪। Hierarchical Inheritance
+
+একটি Parent Class-এর একাধিক Child Class বিদ্যমান থাকলে তাকে **Hierarchical Inheritance** বলে।
+
+### উদাহরণ
+
+```python
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C(A):
+    pass
+```
+
+---
+
+## ৫। Hybrid Inheritance
+
+যে পদ্ধতিতে দুই বা ততোধিক ইনহেরিট্যান্স পদ্ধতি ব্যবহার করা হয়, তাকে **Hybrid Inheritance** বলে।
+
+### ধারণামূলক চিত্র
+
+```text
+      A
+     / \
+    B   C
+     \ /
+      D
+```
+
+এখানে `Single`, `Multiple` এবং `Multilevel` Inheritance-এর সমন্বয়ে **Hybrid Inheritance** গঠিত হয়েছে।
+
+</details>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<!--🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
+<details>
+<summary><strong>📌 Comprehensive-2: Code Explanation (try-except / Exception Handling)</strong></summary>
+
+# 📝 `try-except` (Exception Handling)
+
+```python
+def division(self, x, y):
+    try:
+        return x / y
+    except ZeroDivisionError:
+        return "It is impossible to divide by zero."
+```
+
+### কোডের প্রতিটি অংশের নাম
+
+| Code | নাম |
+|------|-----|
+| `def division(self, x, y):` | **Method Definition** |
+| `try:` | **Try Block** |
+| `return x / y` | **Division Operation** |
+| `except ZeroDivisionError:` | **Except Block (Exception Handler)** |
+| `ZeroDivisionError` | **Built-in Exception** |
+| `return "It is impossible to divide by zero."` | **Error Message Return** |
+
+---
+
+### ব্যাখ্যা
+
+উপরের কোডে `division()` নামে একটি **Method** তৈরি করা হয়েছে, যা দুটি সংখ্যাকে ভাগ করে। `try` Block-এর ভিতরে `x / y` এক্সিকিউট করার চেষ্টা করা হয়। যদি ভাগ করার সময় কোনো Error না হয়, তাহলে ফলাফল `return` করা হয়। কিন্তু `y`-এর মান `0` হলে Python `ZeroDivisionError` Exception তৈরি করে। তখন `except ZeroDivisionError` Block কার্যকর হয় এবং প্রোগ্রাম বন্ধ না হয়ে `"It is impossible to divide by zero."` মেসেজটি `return` করে। এই সম্পূর্ণ প্রক্রিয়াকে **Exception Handling** বলা হয়।
+
+</details>
