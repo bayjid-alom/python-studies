@@ -148,10 +148,6 @@ py main.py
 </details>
 
 ---
-<br>
-
-
-
 
 
 
