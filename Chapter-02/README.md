@@ -1,5 +1,5 @@
-## 📝 পাইথন ফাংশনস
-> **Chapter Name: PYTHON FUNCTIONS**
+## 📝 পাইথন-এর ফাইল অপারেশন
+> **Chapter Name: FILE OPERATION IN PYTHON**
 
 ---
 ```
@@ -8,7 +8,7 @@
 
 ### 📝 Notes + Suggestions (কারিগরি পাঠশালা)
 
-> নিচের নোটগুলো **কারিগরি পাঠশালা**-এর Chapter 01-এর গুরুত্বপূর্ণ Concepts ও Suggestions-এর Screenshot।
+> নিচের নোটগুলো **কারিগরি পাঠশালা**-এর Chapter 02-এর গুরুত্বপূর্ণ Concepts ও Suggestions-এর Screenshot।
 
 <br>
 
@@ -56,38 +56,6 @@
 <p align="center">
   <img src="./notes-images/07.png" alt="Notes 07" width="100%">
 </p>
-
-<br>
-<p align="center">
-  <img src="./notes-images/08.png" alt="Notes 08" width="100%">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="./notes-images/09.png" alt="Notes 09" width="100%">
-</p>
-
-<br>
-<p align="center">
-  <img src="./notes-images/10.png" alt="Notes 10" width="100%">
-</p>
-
-<br>
-<p align="center">
-  <img src="./notes-images/11.png" alt="Notes 11" width="100%">
-</p>
-
-<br>
-<p align="center">
-  <img src="./notes-images/12.png" alt="Notes 12" width="100%">
-</p>
-
-<br>
-
-
-
-
 
 
 

@@ -1,5 +1,5 @@
-## 📝 পাইথন ফাংশনস
-> **Chapter Name: PYTHON FUNCTIONS**
+## 📝 মডিউল, প্যাকেজ এবং এপ্লিকেশন সফটওয়্যার
+> **Chapter Name: MODULE, PACKAGE AND APPLICATION SOFTWARE**
 
 ---
 ```
@@ -8,7 +8,7 @@
 
 ### 📝 Notes + Suggestions (কারিগরি পাঠশালা)
 
-> নিচের নোটগুলো **কারিগরি পাঠশালা**-এর Chapter 01-এর গুরুত্বপূর্ণ Concepts ও Suggestions-এর Screenshot।
+> নিচের নোটগুলো **কারিগরি পাঠশালা**-এর Chapter 03-এর গুরুত্বপূর্ণ Concepts ও Suggestions-এর Screenshot।
 
 <br>
 
@@ -63,7 +63,6 @@
 </p>
 
 <br>
-
 <p align="center">
   <img src="./notes-images/09.png" alt="Notes 09" width="100%">
 </p>
@@ -79,15 +78,6 @@
 </p>
 
 <br>
-<p align="center">
-  <img src="./notes-images/12.png" alt="Notes 12" width="100%">
-</p>
-
-<br>
-
-
-
-
 
 
 
