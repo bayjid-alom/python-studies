@@ -1,4 +1,4 @@
-# Object-Oriented Programming (OOP)
+## 📝 Object-Oriented Programming (OOP)
 > **Chapter Name: FOUR PILLARS OF OOP**
 
 ---
@@ -398,3 +398,112 @@ def division(self, x, y):
 উপরের কোডে `division()` নামে একটি **Method** তৈরি করা হয়েছে, যা দুটি সংখ্যাকে ভাগ করে। `try` Block-এর ভিতরে `x / y` এক্সিকিউট করার চেষ্টা করা হয়। যদি ভাগ করার সময় কোনো Error না হয়, তাহলে ফলাফল `return` করা হয়। কিন্তু `y`-এর মান `0` হলে Python `ZeroDivisionError` Exception তৈরি করে। তখন `except ZeroDivisionError` Block কার্যকর হয় এবং প্রোগ্রাম বন্ধ না হয়ে `"It is impossible to divide by zero."` মেসেজটি `return` করে। এই সম্পূর্ণ প্রক্রিয়াকে **Exception Handling** বলা হয়।
 
 </details>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+---
+## 📝 Notes + Suggestions (কারিগরি পাঠশালা)
+
+> নিচের নোটগুলো **কারিগরি পাঠশালা**-এর Chapter 05-এর গুরুত্বপূর্ণ Concepts ও Suggestions-এর Screenshot।
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/01.png" alt="Notes 01" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/02.png" alt="Notes 02" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/03.png" alt="Notes 03" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/04.png" alt="Notes 04" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/05.png" alt="Notes 05" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/06.png" alt="Notes 06" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/07.png" alt="Notes 07" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/08.png" alt="Notes 08" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/09.png" alt="Notes 09" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/10.png" alt="Notes 10" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/11.png" alt="Notes 11" width="100%">
+</p>
+
+
+

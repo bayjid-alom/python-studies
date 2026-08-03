@@ -1,4 +1,4 @@
-## পাইথন ইটারেটর, জেনারেটর এবং ডেকোরেটর
+## 📝 পাইথন ইটারেটর, জেনারেটর এবং ডেকোরেটর
 > **Chapter Name: PYTHON ITERATOR, GENERATOR AND DECORATORS**
 ---
 <br>
