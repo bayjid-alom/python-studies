@@ -163,13 +163,13 @@ logger.critical("Server is down!!")
 ### How to Run
 
 ```bash
-python 03_using_filename.py
+python 03_server.py
 ```
 
 অথবা
 
 ```bash
-py 03_using_filename.py
+py 03_server.py
 ```
 
 ### Where is the Output?
@@ -203,8 +203,6 @@ py 03_using_filename.py
 
 
 
-
-
 ```
 2026-08-04 13:39:50,028 - Harmless Debug Message - DEBUG
 │                    │                  │         │
@@ -213,6 +211,64 @@ py 03_using_filename.py
 │                    └────────────────────────────── Time (13:39:50.028)
 └────────────────────────────────────────────────── Date (2026-08-04)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 📝 Notes + Suggestions (কারিগরি পাঠশালা)
+
+> নিচের নোটগুলো **কারিগরি পাঠশালা**-এর Chapter 08-এর গুরুত্বপূর্ণ Concepts ও Suggestions-এর Screenshot।
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/01.png" alt="Notes 01" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/02.png" alt="Notes 02" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/03.png" alt="Notes 03" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/04.png" alt="Notes 04" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/05.png" alt="Notes 05" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/06.png" alt="Notes 06" width="100%">
+</p>
+
+
+
 
 
 

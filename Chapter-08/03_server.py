@@ -4,6 +4,7 @@ logging.basicConfig(
     level=logging.DEBUG,
     filename="server.log",
     format="%(asctime)s - %(message)s - %(levelname)s",
+   #  filemode='w'
 )
 
 
@@ -54,9 +55,9 @@ How to Run
 ----------
 1. File Save করো।
 2. Terminal-এ Run করো:
-   python 03_using_filename.py
+   python 03_server.py
    অথবা
-   py 03_using_filename.py
+   py 03_server.py
 
 Where is the Output?
 --------------------
