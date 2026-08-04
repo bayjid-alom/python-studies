@@ -1,0 +1,21 @@
+2026-08-04 14:06:44,784 - 
+ - INFO
+2026-08-04 14:06:44,784 - Harmless Debug Message - DEBUG
+2026-08-04 14:06:44,784 - This is an Info Message - INFO
+2026-08-04 14:06:44,784 - warning......!!! - WARNING
+2026-08-04 14:06:44,784 - Devide by Zero - ERROR
+2026-08-04 14:06:44,784 - Server is down!! - CRITICAL
+2026-08-04 14:06:49,172 - 
+ - INFO
+2026-08-04 14:06:49,172 - Harmless Debug Message - DEBUG
+2026-08-04 14:06:49,172 - This is an Info Message - INFO
+2026-08-04 14:06:49,172 - warning......!!! - WARNING
+2026-08-04 14:06:49,172 - Devide by Zero - ERROR
+2026-08-04 14:06:49,172 - Server is down!! - CRITICAL
+2026-08-04 14:06:51,791 - 
+ - INFO
+2026-08-04 14:06:51,791 - Harmless Debug Message - DEBUG
+2026-08-04 14:06:51,791 - This is an Info Message - INFO
+2026-08-04 14:06:51,792 - warning......!!! - WARNING
+2026-08-04 14:06:51,792 - Devide by Zero - ERROR
+2026-08-04 14:06:51,792 - Server is down!! - CRITICAL
