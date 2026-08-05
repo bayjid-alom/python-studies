@@ -45,5 +45,17 @@
   <img src="./notes-images/06.png" alt="Notes 06" width="100%">
 </p>
 
+<br>
+
+<p align="center">
+  <img src="./notes-images/06.png" alt="Notes 06" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="./notes-images/07.png" alt="Notes 07" width="100%">
+</p>
+
 
 
