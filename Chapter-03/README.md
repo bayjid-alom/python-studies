@@ -2,9 +2,67 @@
 > **Chapter Name: MODULE, PACKAGE AND APPLICATION SOFTWARE**
 
 ---
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 📦 Example: Importing a Custom Module
+
+### 📄 greeting.py (Module File)
+
+```python
+def greet(name):
+    print(f"Hello {name}! What's Up?")
+    print("What are you doing now?")
 ```
 
+### 📄 main.py (Main File)
+
+```python
+# Import the module
+import greeting
+
+# Call the function from the module
+greeting.greet("Bayjid Alom")
+```
+
+### ▶️ Output
+
+```text
+Hello Bayjid Alom! What's Up?
+What are you doing now?
+```
+
+> 💡 **Note:** `import greeting` imports the `greeting.py` module.  
+> Use the **dot (`.`) operator** to call functions from the imported module, e.g., `greeting.greet()`.
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
 
 ### 📝 Notes + Suggestions (কারিগরি পাঠশালা)
 
