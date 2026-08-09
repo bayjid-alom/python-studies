@@ -1,0 +1,18 @@
+2026-08-09 19:45:06,524 - ERROR - Division by zero occurred
+Traceback (most recent call last):
+  File "C:\Python-Programming\Chapter-08\05_exception_logging.py", line 10, in <module>
+    result = 10 / 0
+             ~~~^~~
+ZeroDivisionError: division by zero
+2026-08-09 19:45:16,211 - ERROR - Division by zero occurred
+Traceback (most recent call last):
+  File "C:\Python-Programming\Chapter-08\05_exception_logging.py", line 10, in <module>
+    result = 10 / 0
+             ~~~^~~
+ZeroDivisionError: division by zero
+2026-08-09 19:45:33,132 - ERROR - Division by zero occurred
+Traceback (most recent call last):
+  File "C:\Python-Programming\Chapter-08\05_exception_logging.py", line 10, in <module>
+    result = 10 / 0
+             ~~~^~~
+ZeroDivisionError: division by zero
