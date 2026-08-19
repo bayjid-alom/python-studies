@@ -2,8 +2,23 @@
 > **Chapter Name: FILE OPERATION IN PYTHON**
 
 ---
+
+
+### 📁 File Operations
+
 ```
+file = open("data.txt", "w")
+file.write("Hello Python")
+file.close()
+
+# Read
+file = open("data.txt", "r")
+data = file.read()
+print(data)
+file.close()
 ```
+
+
 
 
 ### 📝 Notes + Suggestions (কারিগরি পাঠশালা)
